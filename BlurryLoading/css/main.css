@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+}
+
+#bg {
+  position: absolute;
+  background: url(../bg-image.webp) no-repeat center center/cover;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.loading-text {
+  position: relative;
+  font-size: 50px;
+  color: #fff;
+  text-align: center;
+}
