@@ -7,6 +7,4 @@ button.addEventListener('click', (e) => {
    e.preventDefault()
 
    inputField.classList.toggle('active')
-
-   
 })
