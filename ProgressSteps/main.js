@@ -1,6 +1,6 @@
 'use strict'
 
-const progress = document.getElementById('progress')
+const progress = document.querySelector('.progress')
 const next = document.getElementById('next')
 const prev = document.getElementById('prev')
 const circles = document.querySelectorAll('.circle')
