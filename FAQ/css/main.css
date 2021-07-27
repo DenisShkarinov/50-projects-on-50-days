@@ -16,6 +16,71 @@ body {
   margin: 0 auto;
 }
 
+.container .faq.active {
+  background: #fff;
+}
+
+.container .faq.active .faq-text {
+  opacity: 1;
+  margin-top: 30px;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+  -webkit-transition: -webkit-transform .3s linear;
+  transition: -webkit-transform .3s linear;
+  transition: transform .3s linear;
+  transition: transform .3s linear, -webkit-transform .3s linear;
+}
+
+.container .faq.active .faq-toggle .fa-angle-down {
+  display: none;
+}
+
+.container .faq.active .faq-toggle .fa-times-circle {
+  display: block;
+}
+
+.container .faq {
+  background: transparent;
+  border-radius: 5px;
+  border: 1px solid #9fa4a8;
+  margin: 20px 0;
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.container .faq .faq-title {
+  margin-right: 30px;
+}
+
+.container .faq .faq-toggle {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  height: 30px;
+  width: 30px;
+  background: transparent;
+  border: 0;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.container .faq .faq-toggle .fa-times-circle {
+  display: none;
+}
+
+.container .faq .faq-text {
+  opacity: 0;
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+  -webkit-transition: -webkit-transform .3s linear;
+  transition: -webkit-transform .3s linear;
+  transition: transform .3s linear;
+  transition: transform .3s linear, -webkit-transform .3s linear;
+}
+
 .title {
   text-transform: capitalize;
   text-align: center;
